@@ -1,0 +1,11 @@
+<h4>Liste de quelques Pokémons 📝</h4>
+<div>
+  <span class="pkmnList" *ngFor="let p of pokeApi.pkmnList">{{p}}</span>
+</div>
+
+<hr>
+
+<h4>Chercher un Pokémon 🔍</h4>
+<input type="text" placeholder="charmander" [(ngModel)]="inputPkmn">
+<br>
+→ <a routerLink="/single/{{inputPkmn}}">Rechercher</a>

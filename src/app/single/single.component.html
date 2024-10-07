@@ -1,0 +1,9 @@
+<h4>Pokémon recherché 🕵️‍♀️</h4>
+@if (pokemon) {
+<div>
+  <p>Id : {{pokemon.id}}</p>
+  <p>Nom : {{pokemon.name}}</p>
+  <img src="{{pokemon.imgSrc}}" alt="{{pokemon.name}}">
+  <p class="favorite" (click)="favorite()">+⭐</p>
+</div>
+}
